@@ -17,19 +17,27 @@
                 <td th:text="'ID: ' + ${job.id}"></td>
             </tr>
             <tr>
-                <td th:text="'Name: ' + ${job.name}"></td>
+                <td th:text="'NAME: ' + ${job.name}"></td>
             </tr>
             <tr>
-                <td th:text="'Employer: ' + ${job.employer}"></td>
+                <td>
+                    <a th:href="@{/list/jobs(column='employer',value=${job.employer})}" th:text="'EMPLOYER: ' + ${job.employer}"></a>
+                </td>
             </tr>
             <tr>
-                <td th:text="'Location: ' + ${job.location}"></td>
+                <td >
+                    <a th:href="@{/list/jobs(column='location',value=${job.location})}" th:text="'LOCATION: ' + ${job.location}"></a>
+                </td>
             </tr>
             <tr>
-                <td th:text="'Position Type: ' + ${job.positionType}"></td>
+                <td >
+                    <a th:href="@{/list/jobs(column='positionType',value=${job.positionType})}" th:text="'POSITION TYPE: ' + ${job.positionType}"></a>
+                </td>
             </tr>
             <tr>
-                <td th:text="'Skill: ' + ${job.coreCompetency}"></td>
+                <td >
+                    <a th:href="@{/list/jobs(column='coreCompetency',value=${job.coreCompetency})}" th:text="'SKILLS: ' + ${job.coreCompetency}"></a>
+                </td>
             </tr>
         </table>
     </th:block>
