@@ -29,7 +29,6 @@ public class JobData {
      * Fetch list of all job objects from loaded data,
      * without duplicates, then return a copy.
      */
-
     public static ArrayList<Job> findAll() {
 
         // load data, if not already loaded
